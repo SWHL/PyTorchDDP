@@ -3,7 +3,13 @@
 - Python: 3.7.10
 - GPU: 两个机器上4个V100
 
-### DDP启动方式
+### 单机多卡
+```bash
+# 使用第三和第四张卡的并行运行命令， torch v1.10以上
+CUDA_VISIBLE_DEVICES=2,3 torchrun --nproc_per_node=2 demo_single_gpus.py
+```
+
+### 多机多卡
 #### torch.distributed.launch
 - 假设是在2台机器上使用4个GPU
 - 准备工作：两台机器上要有相同的代码和数据
