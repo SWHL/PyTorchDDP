@@ -40,3 +40,6 @@ CUDA_VISIBLE_DEVICES=2,3 torchrun --nproc_per_node=2 demo_single_gpus.py
 |`node_rank`|进程开始的序号||
 |`master_addr`|主节点ip地址||
 |`master_port`|主节点端口号||
+
+#### 参考资料
+- [PyTorch 并行训练极简 Demo](https://mp.weixin.qq.com/s?__biz=MzI5MDUyMDIxNA==&mid=2247638753&idx=3&sn=59705f871ebd57f3f85040527bdeeb0b&chksm=ec123318db65ba0ef2940499898f0ad0d1d3bf34167d89b880fabc22215512e2be0f35fe879a&mpshare=1&scene=23&srcid=0314wmvKMWBN8TQzyMPt3BJE&sharer_sharetime=1679562302804&sharer_shareid=d3bb90e2f60a69fc71407a2191356565#rd)
